@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/icon_bg"
+        android:layout_margin="20dp"
+        android:src="@drawable/text_icon"
+        android:padding="15dp"
+        />
+    <TextView
+        android:id="@+id/heading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text Scan"
+        android:layout_toRightOf="@id/icon"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:fontFamily="@font/source_sans_bold"
+        android:layout_marginTop="23dp"
+        />
+    <TextView
+        android:id="@+id/timing_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 June, 13:50"
+        android:layout_toRightOf="@id/icon"
+        android:layout_below="@id/heading_text"
+        android:textColor="#99FFFFFF"
+        android:textSize="16dp"
+        android:fontFamily="@font/source_sans"
+        android:layout_marginTop="3dp"
+        />
+    <ImageView
+        android:id="@+id/favorite_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/like_unbordered"
+        android:layout_toLeftOf="@id/more_button"
+        />
+    <ImageView
+        android:id="@+id/more_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/more"
+        android:padding="5dp"
+        />
+</RelativeLayout>
